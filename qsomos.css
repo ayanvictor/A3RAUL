@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #00f396;
+    color: rgb(48, 13, 43);
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(48, 13, 43);
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #201b2c;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+footer {
+    background-color:#201b2c; /* Cor de fundo escura */
+    color: #f9f9f9; /* Cor do texto clara para contraste */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px 10px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    border-top: 3px solid #4caf50; /* Linha superior para destacar */
+    position: relative; /* Posicionamento para possíveis ajustes */
+    bottom: 0; /* Garante que o rodapé fique no fim */
+    width: 100%; /* Ocupa toda a largura da página */
+}
+
+footer p {
+    margin: 0; /* Remove margem para centralizar */
+}

@@ -1,0 +1,132 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #201b2c;
+}
+
+/* Menu principal */
+header {
+    background-color: #0dca91;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: #761e99;
+    border-radius: 5px;
+}
+
+/* Submenu */
+.submenu {
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #4a0253;
+    display: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.submenu li {
+    width: 150px;
+}
+
+.submenu a {
+    color: white;
+    padding: 10px;
+}
+
+.submenu a:hover {
+    background-color: #200144;
+}
+
+/* Exibir submenu ao passar o mouse */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+/* Seção de notícias */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.noticias {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.noticias h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.noticia {
+    margin-bottom: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noticia img {
+    width: 100%; /* Imagem ocupa toda a largura do bloco */
+    height: auto; /* Altura ajustada proporcionalmente */
+    display: block; /* Garante que a imagem fique como bloco acima do texto */
+}
+
+.noticia .conteudo {
+    padding: 15px;
+}
+
+.noticia h2 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.noticia p {
+    margin: 0;
+    color: #666;
+}
+
+footer {
+    background-color:#201b2c; 
+    color: #f9f9f9; 
+    text-align: center; 
+    padding: 20px 10px; 
+    font-size: 14px; 
+    border-top: 3px solid #4caf50;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+footer p {
+    margin: 0; /* Remove margem para centralizar */
+}

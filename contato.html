@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4MONEY</title>
+    <link rel="stylesheet" href="contato.css">
+    <link rel="icon" href="4money.webp" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+
+                    <li><a href="contato.html">Contato</a></li>
+                <li class="dropdown">
+                    <a href="qsomos.html">Quem Somos</a>
+                    <ul class="submenu">
+                        <li><a href="curriculob.html">Currículo Bárbara</a></li>
+                        <li><a href="curriculoe.html">Currículo Erick</a></li>
+                        <li><a href="curriculoh.html">Currículo Hudson</a></li>
+                        <li><a href="curriculov.html">Currículo Victor</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="contato">
+            <h1>Entre em contato</h1>
+            <form>
+                <div class="campo">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" required id="nome" name="nome">
+                </div>
+                <div class="campo">
+                    <label for="post-code">Seu CEP</label>
+                    <input type="number" required id="post-code" name="post-code">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" requiredid="email" name="email">
+                </div>
+                <div class="campo">
+                    <label for="telefone">Seu Número</label>
+                    <input type="tel" required id="telefone" name="telefone">
+                </div>
+                <div class="campo">
+                    <label for="mensagem">Deixe sua mensagem</label>
+                    <textarea id="mensagem" required name="mensagem" rows="4"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+                
+            </form> 
+            <div id="mensagem-sucesso" class="oculto">
+                <p>Thank you! Your message has been sent successfully.</p>
+            </div>
+        </section>
+        
+    </main>
+    <script> document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('form-contato');
+        const mensagemSucesso = document.getElementById('mensagem-sucesso');
+
+        // Adiciona evento de envio ao formulário
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Exibe a mensagem de sucesso
+            mensagemSucesso.classList.remove('oculto');
+
+            // Limpa os campos do formulário
+            form.reset();
+
+            // Oculta a mensagem após 5 segundos (opcional)
+            setTimeout(() => {
+                mensagemSucesso.classList.add('oculto');
+            }, 5000);
+        });
+    });</script>
+   
+</body>
+<footer>
+    <p>&copy; 2024 Notícias de Moedas - Todos os direitos reservados.</p>
+</footer>
+</html>
+
+
+    </body>
